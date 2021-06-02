@@ -27,4 +27,6 @@ $(document).ready(function(){
     });
     // END Скрываем панель
 
+    $('[data-togetwidget]').html('<p>Есть!!!</p>');
+
 });
