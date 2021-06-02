@@ -38,7 +38,6 @@ $(document).ready(function(){
         type: 'get',
         success: function(data) {
             $('[data-togetwidget]').html(data);
-            document.write('<p>Write AJAX</p>');
         }
     });
     
