@@ -21,7 +21,13 @@ $(document).ready(function(){
     });
     // END Показываем панель
     // Скрываем панель
-    $('[data-togetwidget-close]').click(function(){
+    // $('[data-togetwidget-close]').click(function(){
+    //     var id = $(this).attr('data-togetwidget-close');
+    //     $('[data-togetwidget="'+id+'"]').removeClass('active');
+    // });
+    // END Скрываем панель
+    // Скрываем панель
+    $('body').on('click', '[data-togetwidget-close]', function(){
         var id = $(this).attr('data-togetwidget-close');
         $('[data-togetwidget="'+id+'"]').removeClass('active');
     });
@@ -32,6 +38,7 @@ $(document).ready(function(){
         type: 'get',
         success: function(data) {
             $('[data-togetwidget]').html(data);
+            document.write('<p>Write AJAX</p>');
         }
     });
     
