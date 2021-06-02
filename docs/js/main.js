@@ -26,7 +26,7 @@ $(document).ready(function(){
         $('[data-togetwidget="'+id+'"]').removeClass('active');
     });
     // END Скрываем панель
-
+    
     $('[data-togetwidget]').html('<style>.togetwidgetbutton {bottom: 100px;}</style>');
 
 });
