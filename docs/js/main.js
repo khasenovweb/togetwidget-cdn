@@ -1,11 +1,3 @@
-if(!window.jQuery){
-    document.write('<script type="text/javascript" src="/js/lib/jquery.js"></script>')
-    
-}
-
-document.write('<script type="text/javascript" src="/js/lib/main.js"></script>')
-document.write('<script type="text/javascript" src="/js/lib/main.css"></script>')
-
 $(document).ready(function(){
 
     // Анимация кнопки (смена картинки)
