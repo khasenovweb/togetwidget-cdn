@@ -26,7 +26,14 @@ $(document).ready(function(){
         $('[data-togetwidget="'+id+'"]').removeClass('active');
     });
     // END Скрываем панель
+
+    $.ajax({
+        url: 'https://cdn.togett.ru/',
+        type: 'get',
+        success: function(data) {
+            $('[data-togetwidget]').html(data);
+        }
+    });
     
-    $('[data-togetwidget]').html('<style>.togetwidgetbutton {bottom: 100px;}</style>');
 
 });
