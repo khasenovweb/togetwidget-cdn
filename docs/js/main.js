@@ -21,12 +21,6 @@ $(document).ready(function(){
     });
     // END Показываем панель
     // Скрываем панель
-    // $('[data-togetwidget-close]').click(function(){
-    //     var id = $(this).attr('data-togetwidget-close');
-    //     $('[data-togetwidget="'+id+'"]').removeClass('active');
-    // });
-    // END Скрываем панель
-    // Скрываем панель
     $('body').on('click', '[data-togetwidget-close]', function(){
         var id = $(this).attr('data-togetwidget-close');
         $('[data-togetwidget="'+id+'"]').removeClass('active');
