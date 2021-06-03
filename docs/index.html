@@ -116,7 +116,18 @@
 </style>
 
 <script>
-    $('.togetwidget__header').click(function(){
-        alert('Кликнул на шапку панели');
+    // Скрываем панель
+    $('body').on('click', '[data-togetwidget-close]', function(){
+        var id = $(this).attr('data-togetwidget-close');
+        $('[data-togetwidget="'+id+'"]').removeClass('active');
     });
+
+    var myElement = document.getElementById('togetwidget__content');
+    var mc = new Hammer(myElement);
+
+    mc.on("swipeleft", function(ev) {
+        $('[data-togetwidget]').removeClass('active');
+    });
+    // END Скрываем панель
+    
 </script>
