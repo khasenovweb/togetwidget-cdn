@@ -174,9 +174,7 @@
 }
 .togetwidget__content {
   padding-top: 50px;
-  padding-bottom: 50px;
-  height: -webkit-calc(100% - 50px);
-  height: calc(100% - 50px);
+  height: 100%;
   overflow-y: auto;
 }
 .togetwidgetbutton {
