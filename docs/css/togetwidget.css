@@ -174,7 +174,9 @@
 }
 .togetwidget__content {
   padding-top: 50px;
-  height: 100%;
+  padding-bottom: 50px;
+  height: -webkit-calc(100% - 50px);
+  height: calc(100% - 50px);
   overflow-y: auto;
 }
 .togetwidgetbutton {
@@ -217,6 +219,7 @@
 }
 .togetwidgetbutton__text {
   font-size: 12px;
+  font-weight: 400;
 }
 .togetwidget__content__blocks {
   padding: 20px;

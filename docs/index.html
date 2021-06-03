@@ -11,27 +11,43 @@
             <div class="togetwidget__content__block">
                 <div class="togetwidget__content__block__label">г. Москва</div>
                 <div class="togetwidget__content__block__adresses">
-                    <label for="adress4" class="togetwidget__content__block__adress">
-                        <input type="radio" id="adress4" name="adress">
+                    <!-- togetwidget__content__block__adress -->
+                    <label for="togetwidgetadress4" class="togetwidget__content__block__adress">
+                        <input 
+                            type="radio" 
+                            id="togetwidgetadress4" 
+                            name="togetwidgetadress" 
+                            data-yandex-taxi="https://3.redirect.appmetrica.yandex.com/route?end-lat=55.152562&amp;end-lon=61.411636&amp;ref=2342&amp;appmetrica_tracking_id=1178268795219780156"
+                            data-yandex-navigator="yandexnavi://build_route_on_map?lat_to=55.152562&lon_to=61.411636"
+                            data-2gis="https://2gis.ru/routeSearch/to/61.411636,55.152562"
+                            data-google-map="https://maps.google.com?daddr=55.152562,61.411636"
+                            data-apple-map="http://maps.apple.com/?daddr=55.152562,61.411636"
+                            checked
+                        >
                         <div class="togetwidget__content__block__adress__wrapper">
-                            <img src="https://cdn.togett.ru/img/adress__check.svg" alt="" class="togetwidget__content__block__adress__icon">
-                            <div class="togetwidget__content__block__adress__title">ул. Гагрина 63а</div>
+                            <img src="img/adress__check.svg" alt="" class="togetwidget__content__block__adress__icon">
+                            <div class="togetwidget__content__block__adress__title">ул. Орджоникидзе, 29</div>
                         </div>
                     </label>
-                    <label for="adress5" class="togetwidget__content__block__adress">
-                        <input type="radio" id="adress5" name="adress">
+                    <!-- END togetwidget__content__block__adress -->
+                    <!-- togetwidget__content__block__adress -->
+                    <label for="togetwidgetadress5" class="togetwidget__content__block__adress">
+                        <input 
+                            type="radio" 
+                            id="togetwidgetadress5" 
+                            name="togetwidgetadress"
+                            data-yandex-taxi="https://3.redirect.appmetrica.yandex.com/route?end-lat=55.139622&amp;end-lon=61.440543&amp;ref=2342&amp;appmetrica_tracking_id=1178268795219780156"
+                            data-yandex-navigator="yandexnavi://build_route_on_map?lat_to=55.139622&lon_to=61.440543"
+                            data-2gis="https://2gis.ru/routeSearch/to/61.440543,55.139622"
+                            data-google-map="https://maps.google.com?daddr=55.139622,61.440543"
+                            data-apple-map="http://maps.apple.com/?daddr=55.139622,61.440543"
+                        >
                         <div class="togetwidget__content__block__adress__wrapper">
-                            <img src="https://cdn.togett.ru/img/adress__check.svg" alt="" class="togetwidget__content__block__adress__icon">
-                            <div class="togetwidget__content__block__adress__title">ул. Ленина 45</div>
+                            <img src="img/adress__check.svg" alt="" class="togetwidget__content__block__adress__icon">
+                            <div class="togetwidget__content__block__adress__title">ул. Гагарина, 16</div>
                         </div>
                     </label>
-                    <label for="adress6" class="togetwidget__content__block__adress">
-                        <input type="radio" id="adress6" name="adress">
-                        <div class="togetwidget__content__block__adress__wrapper">
-                            <img src="https://cdn.togett.ru/img/adress__check.svg" alt="" class="togetwidget__content__block__adress__icon">
-                            <div class="togetwidget__content__block__adress__title">ул. Александра Шмакова 17а</div>
-                        </div>
-                    </label>
+                    <!-- togetwidget__content__block__adress -->
                 </div>
             </div>
             <!-- END togetwidget__content__block -->
@@ -41,7 +57,7 @@
                 <div class="togetwidget__content__block__label">Заказать такси</div>
                 <div class="togetwidget__content__block__apps">
                     <!-- togetwidget__content__block__app -->
-                    <a href="/" class="togetwidget__content__block__app">
+                    <a href="/" class="togetwidget__content__block__app" data-link-yandex-taxi>
                         <div class="togetwidget__content__block__app__icon" style="background-image: url(https://cdn.togett.ru/img/yandex-taxi.jpg);"></div>
                         <div class="togetwidget__content__block__app__text">
                             <div class="togetwidget__content__block__app__title">Яндекс Такси</div>
@@ -58,7 +74,7 @@
                 <div class="togetwidget__content__block__label">Маршрут в приложении</div>
                 <div class="togetwidget__content__block__apps">
                     <!-- togetwidget__content__block__app -->
-                    <a href="/" class="togetwidget__content__block__app">
+                    <a href="/" class="togetwidget__content__block__app" data-link-2gis>
                         <div class="togetwidget__content__block__app__icon" style="background-image: url(https://cdn.togett.ru/img/2gis.jpg);"></div>
                         <div class="togetwidget__content__block__app__text">
                             <div class="togetwidget__content__block__app__title">2ГИС</div>
@@ -67,7 +83,7 @@
                     </a>
                     <!-- END togetwidget__content__block__app -->
                     <!-- togetwidget__content__block__app -->
-                    <a href="/" class="togetwidget__content__block__app">
+                    <a href="/" class="togetwidget__content__block__app" data-link-yandex-navigator>
                         <div class="togetwidget__content__block__app__icon" style="background-image: url(https://cdn.togett.ru/img/yandex-navigator.jpg);"></div>
                         <div class="togetwidget__content__block__app__text">
                             <div class="togetwidget__content__block__app__title">Яндекс Навигатор</div>
@@ -76,7 +92,7 @@
                     </a>
                     <!-- END togetwidget__content__block__app -->
                     <!-- togetwidget__content__block__app -->
-                    <a href="/" class="togetwidget__content__block__app">
+                    <a href="/" class="togetwidget__content__block__app" data-link-google-map>
                         <div class="togetwidget__content__block__app__icon" style="background-image: url(https://cdn.togett.ru/img/google-map.jpg);"></div>
                         <div class="togetwidget__content__block__app__text">
                             <div class="togetwidget__content__block__app__title">Google Карты</div>
@@ -85,7 +101,7 @@
                     </a>
                     <!-- END togetwidget__content__block__app -->
                     <!-- togetwidget__content__block__app -->
-                    <a href="/" class="togetwidget__content__block__app">
+                    <a href="/" class="togetwidget__content__block__app" data-link-apple-map>
                         <div class="togetwidget__content__block__app__icon" style="background-image: url(https://cdn.togett.ru/img/apple-map.jpg);"></div>
                         <div class="togetwidget__content__block__app__text">
                             <div class="togetwidget__content__block__app__title">Apple Карты</div>
@@ -103,7 +119,7 @@
     <div class="togetwidget__footer">
         <div class="togetwidget__footer__text">
             <div class="togetwidget__footer__text__left">2015-2021 © “Студия Хасенова”</div>
-            <a href="/" class="togetwidget__footer__text__right">
+            <a href="https://togett.ru" class="togetwidget__footer__text__right">
                 Виджет для сайта ToGett
             </a>
         </div>
@@ -126,5 +142,25 @@
         $('[data-togetwidget]').removeClass('active');
     });
     // END Скрываем панель
+
+    // Присваиваем нужную ссылку приложениям согласно адресу
+    function add_links_app() {
+        var yandex_taxi = $('input[name="togetwidgetadress"]:checked').attr('data-yandex-taxi');
+        var yandex_navigator = $('input[name="togetwidgetadress"]:checked').attr('data-yandex-navigator');
+        var yandex_2gis = $('input[name="togetwidgetadress"]:checked').attr('data-2gis');
+        var yandex_google_map = $('input[name="togetwidgetadress"]:checked').attr('data-google-map');
+        var yandex_apple_map = $('input[name="togetwidgetadress"]:checked').attr('data-apple-map');
+        $('[data-link-yandex-taxi]').attr('href', yandex_taxi);
+        $('[data-link-yandex-navigator]').attr('href', yandex_navigator);
+        $('[data-link-2gis]').attr('href', yandex_2gis);
+        $('[data-link-google-map]').attr('href', yandex_google_map);
+        $('[data-link-apple-map]').attr('href', yandex_apple_map);
+    }
+    
+    add_links_app();
+    $('input[name="togetwidgetadress"]').on('change', function(){
+        add_links_app();
+    });
+    // END Присваиваем нужную ссылку приложениям согласно адресу
     
 </script>

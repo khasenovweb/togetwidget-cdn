@@ -11,8 +11,3 @@ document.write('<script type="text/javascript" src="https://cdn.togett.ru/js/ham
 // Подключаем CSS
 document.write('<link rel="stylesheet" href="https://cdn.togett.ru/css/togetwidget.css">')
 // END Подключаем CSS
-
-
-// Вставляем панель
-// document.write('<div class="togetwidget" data-togetwidget="1"></div>')
-// END Вставляем панель
