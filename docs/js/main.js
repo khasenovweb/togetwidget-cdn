@@ -4,7 +4,8 @@ $(document).ready(function(){
         url: 'https://cdn.togett.ru/',
         type: 'get',
         success: function(data) {
-            $('[data-togetwidget]').html(data);
+            // $('[data-togetwidget]').html(data);
+            $('body').append(data);
         }
     });
 

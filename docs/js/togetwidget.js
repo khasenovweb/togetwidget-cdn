@@ -14,5 +14,5 @@ document.write('<link rel="stylesheet" href="https://cdn.togett.ru/css/togetwidg
 
 
 // Вставляем панель
-document.write('<div class="togetwidget" data-togetwidget="1"></div>')
+// document.write('<div class="togetwidget" data-togetwidget="1"></div>')
 // END Вставляем панель
