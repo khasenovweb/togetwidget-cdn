@@ -2,12 +2,11 @@ $(document).ready(function(){
 
     var md = new MobileDetect(window.navigator.userAgent);
     if( md.is('iOS') == true || md.is('AndroidOS') == true ) {
-        
+
         $.ajax({
             url: 'https://cdn.togett.ru/',
             type: 'get',
             success: function(data) {
-                // $('[data-togetwidget]').html(data);
                 $('body').append(data);
             }
         });
