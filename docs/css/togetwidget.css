@@ -187,6 +187,7 @@
   color: white;
   cursor: pointer;
   z-index: 999999998;
+  box-shadow: 0 19px 38px 0 rgb(34 36 1.43333333%);
   background-color: #00B75F;
   position: fixed;
   bottom: 20px;
