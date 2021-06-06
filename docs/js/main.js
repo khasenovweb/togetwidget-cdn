@@ -1,7 +1,7 @@
 $(document).ready(function(){
 
-    var md = new MobileDetect(window.navigator.userAgent);
-    if( md.is('iOS') == true || md.is('AndroidOS') == true ) {
+    var detect = new MobileDetect(window.navigator.userAgent);
+    if( detect.mobile() != null ) {
 
         $.ajax({
             url: 'https://cdn.togett.ru/',
