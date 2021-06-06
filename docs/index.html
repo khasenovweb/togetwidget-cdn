@@ -174,5 +174,16 @@
         add_links_app();
     });
     // END Присваиваем нужную ссылку приложениям согласно адресу
+
+    // Стилизуем активный адрес
+    function adress_active(){
+        $('.togetwidget__content__block__adress__wrapper').removeClass('active');
+        $('.togetwidget__content__block__adress input:checked').closest('.togetwidget__content__block__adress').find('.togetwidget__content__block__adress__wrapper').addClass('active');
+    }
+    adress_active();
+    $('.togetwidget__content__block__adress').click(function(){
+        adress_active();
+    });
+    // END Стилизуем активный адрес
     
 </script>
