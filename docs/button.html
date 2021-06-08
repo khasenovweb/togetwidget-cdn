@@ -26,9 +26,33 @@
     },3000);
     // END Анимация кнопки (смена картинки)
 
+
+    
+    // Получаем ширину скроллбара
+    function get_scrollbar_width(){
+        let div = document.createElement('div');
+
+        div.style.overflowY = 'scroll';
+        div.style.width = '50px';
+        div.style.height = '50px';
+        
+        // мы должны вставить элемент в документ, иначе размеры будут равны 0
+        document.body.append(div);
+        let scrollWidth = div.offsetWidth - div.clientWidth;
+        
+        div.remove();
+        console.log(scrollWidth);
+        
+        return scrollWidth;
+    }
+    // END Получаем ширину скроллбара
+
     // Показываем панель
     $('[data-togetwidget-show]').click(function(){
         var id = $(this).attr('data-togetwidget-show');
+        var scrollbar_width = get_scrollbar_width();
+        $('body').css('padding-right', scrollbar_width+'px');
+        $('body').addClass('togetwidget_hidden');
         $('[data-togetwidget="'+id+'"]').addClass('active');
     });
     // END Показываем панель

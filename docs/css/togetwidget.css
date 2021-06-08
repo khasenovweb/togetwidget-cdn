@@ -82,6 +82,9 @@
   font-display: swap;
   src: url(https://fonts.gstatic.com/s/roboto/v27/KFOlCnqEu92Fr1MmYUtvAw.ttf) format('truetype');
 }
+.togetwidget_hidden {
+  overflow-y: hidden;
+}
 .togetwidget {
   background-color: #fff;
   font-family: 'Roboto', sans-serif;

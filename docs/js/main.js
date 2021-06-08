@@ -1,5 +1,5 @@
 $(document).ready(function(){
-
+    
     var detect = new MobileDetect(window.navigator.userAgent);
     if( detect.mobile() != null ) {
 
