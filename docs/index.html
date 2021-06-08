@@ -172,6 +172,9 @@
     var mc = new Hammer(myElement);
 
     mc.on("swipeleft", function(ev) {
+        var scrollbar_width = get_scrollbar_width();
+        $('body').css('padding-right', '0');
+        $('body').removeClass('togetwidget_hidden');
         $('[data-togetwidget]').removeClass('active');
     });
     // END Скрываем панель
