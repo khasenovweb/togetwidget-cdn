@@ -6,12 +6,12 @@ $(document).ready(function(){
         var domain = location.hostname; 
 
         $.ajax({
-            url: 'https://togett.ru/'+domain,
+            url: 'https://togett.ru/'+domain+'/',
             type: 'get',
             success: function(data) {
                 if( data != 'null' ) {
                     $.ajax({
-                        url: 'https://togett.ru/panel/'+data,
+                        url: 'https://togett.ru/panel/'+data+'/',
                         type: 'get',
                         success: function(data) {
                             $('body').append(data);
@@ -20,7 +20,7 @@ $(document).ready(function(){
                 
                 
                     $.ajax({
-                        url: 'https://togett.ru/button/'+data,
+                        url: 'https://togett.ru/button/'+data+'/',
                         type: 'get',
                         success: function(data) {
                             $('body').append(data);
